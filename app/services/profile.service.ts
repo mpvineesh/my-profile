@@ -71,7 +71,8 @@ export class ProfileService {
     }
 	
 	private getAbout() {
-        return this.http.get(APIUrl).toPromise()
+		console.log(this.APIUrl);
+        return this.http.get(this.APIUrl).toPromise()
       .then(response => response.json());
     }
 	private getProjects() {
