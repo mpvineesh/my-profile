@@ -15,8 +15,6 @@ export class AboutComponent {
 	aboutMe  = '';
 	constructor(profileService:ProfileService){
 		 profileService.getAbout()
-      .then(
-	  data => console.log(data)
-	  );
+      .then(  data => this.aboutMe = data );
 	}	
 }
