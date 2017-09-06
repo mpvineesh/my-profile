@@ -21,6 +21,7 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link id="loader" rel="stylesheet" href="assets/css/loader.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -61,7 +62,16 @@
     </script>
 </head>
 <body>
-    <app>Loading...</app>
+    <app>
+		<div id="overlay" class="overlay">
+			<div class="cssload-container">
+				<div class="cssload-lt"></div>
+				<div class="cssload-rt"></div>
+				<div class="cssload-lb"></div>
+				<div class="cssload-rb"></div>
+			</div>
+		</div>	
+	</app>
 </body>
  
 </html>

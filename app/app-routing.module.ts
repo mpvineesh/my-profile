@@ -2,18 +2,19 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/index';
-import { ProductListComponent, ProductAddEditComponent } from './products/index';
+//import { ProductListComponent, ProductAddEditComponent } from './products/index';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
-    {
+   
+ /*  {
         path: 'products',
         component: ProductListComponent,
         children: [
             { path: 'add', component: ProductAddEditComponent },
             { path: 'edit/:id', component: ProductAddEditComponent }
         ]
-    },
+    },*/
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
@@ -26,4 +27,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [HomeComponent, ProductListComponent, ProductAddEditComponent];
+export const routedComponents = [HomeComponent];

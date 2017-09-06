@@ -4,16 +4,16 @@ import { fadeInAnimation } from '../../_animations/index';
 import { ProfileService } from '../../services/index';
 
 @Component({
-	selector:'profile-about-me',
+	selector:'profile-skills',
     moduleId: module.id.toString(),
-    templateUrl: 'about.component.html',
+    templateUrl: 'skills.component.html',
     animations: [fadeInAnimation],
     host: { '[@fadeInAnimation]': '' }
 })
 
-export class AboutComponent {
-	aboutMe  = '';
+export class SkillsComponent {
+	skills  = '';
 	constructor(profileService:ProfileService){
-		 //profileService.getAbout().then(  data => this.aboutMe = data );
+		 profileService.getSkills().then(  data => this.skills = data );
 	}	
 }

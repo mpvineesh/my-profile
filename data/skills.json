@@ -1,0 +1,24 @@
+{
+"data" : [
+	{
+	"name" : "Java",
+    "levellevel": "Beginner",
+    "percentage" :"20"
+    },
+	{
+	"name" : "Coldfusion",
+    "level": "Expert",
+    "percentage" :"70"
+	},
+	{
+	"name" : "Javascript",
+    "level": "Expert",
+    "percentage" :"60"
+	},
+	{
+	"name" : "CSS3",
+    "level": "Intermediate",
+    "percentage" :"45"
+	}
+	]
+}

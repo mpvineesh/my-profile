@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/index';
 import { FooterComponent } from './components/footer/index';
+import { BasicInfoComponent } from './components/basic-info/index';
 import { AboutComponent } from './components/about/index';
+import { SkillsComponent } from './components/skills/index';
+import { EducationComponent } from './components/education/index';
 import { ProjectsComponent } from './components/projects/index';
 import { ExperienceComponent } from './components/experience/index';
 import { AppRoutingModule, routedComponents } from './app-routing.module';
-import { ProductService, PubSubService } from './_services/index';
 import 'rxjs/add/operator/toPromise';
 import { ProfileService } from './services/index';
 
@@ -29,11 +31,14 @@ import { ProfileService } from './services/index';
 		AboutComponent,
 		ProjectsComponent,
 		ExperienceComponent,
-		FooterComponent
+		FooterComponent,
+		BasicInfoComponent,
+		SkillsComponent,
+		EducationComponent
     ],
     providers: [
-        ProductService,
-        PubSubService,
+      //  ProductService,
+     //   PubSubService,
 		ProfileService
     ],
     bootstrap: [AppComponent]
