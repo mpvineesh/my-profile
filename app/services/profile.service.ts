@@ -10,10 +10,23 @@ export class ProfileService {
    
 	private getSkills() {
 		console.log(this.APIUrl);
-		let u =  'http://my.local/angular/data/skills.json';
+		let u =  'http://my.local/angular/my-profile/data/skills.json';
           return this.http.get(u).toPromise().then(response => response.json().data);
     }
-	
+	private getExperience() {
+		console.log(this.APIUrl);
+		let u =  'http://my.local/angular/my-profile/data/experience.json';
+          return this.http.get(u).toPromise().then(response => response.json().data);
+    }
+	private getBasicInfo() {
+		console.log(this.APIUrl);
+		let u =  'http://my.local/angular/my-profile/data/basic-info.json';
+          return this.http.get(u).toPromise().then(response => response.json().data);
+    }
+	private getEducation() {
+		let u =  'http://my.local/angular/my-profile/data/education.json';
+          return this.http.get(u).toPromise().then(response => response.json().data);
+    }
 	
 	
 	private getAbout() {

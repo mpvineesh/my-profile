@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { fadeInAnimation } from '../../_animations/index';
+import { ProfileService } from '../../services/index';
 
 @Component({
 	selector:'profile-experience',
@@ -11,4 +12,8 @@ import { fadeInAnimation } from '../../_animations/index';
 })
 
 export class ExperienceComponent {
+	experience  = '';
+	constructor(profileService:ProfileService){
+		 profileService.getExperience().then(  data => this.experience = data );
+	}	
 }

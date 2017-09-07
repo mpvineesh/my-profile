@@ -12,8 +12,8 @@ import { ProfileService } from '../../services/index';
 })
 
 export class EducationComponent {
-	aboutMe  = '';
+	education  = '';
 	constructor(profileService:ProfileService){
-		 //profileService.getAbout().then(  data => this.aboutMe = data );
+		 profileService.getEducation().then(  data => this.education = data );
 	}	
 }

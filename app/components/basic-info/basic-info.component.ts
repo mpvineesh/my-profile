@@ -12,8 +12,8 @@ import { ProfileService } from '../../services/index';
 })
 
 export class BasicInfoComponent {
-	aboutMe  = '';
+	basicInfo  = '';
 	constructor(profileService:ProfileService){
-		 //profileService.getAbout().then(  data => this.aboutMe = data );
+		 profileService.getBasicInfo().then(  data => this.basicInfo = data );
 	}	
 }
